@@ -1,9 +1,10 @@
 import Link from "next/link";
+import style from "../../styles/header.module.css"
 
 export default function Header() {
     
     return(
-        <header>
+        <div className={style.wrapper}>
             <ul>
                 <li>
                     <Link href="/">
@@ -31,6 +32,9 @@ export default function Header() {
                     </Link>
                 </li>
             </ul>
-        </header>
+            <div className={style.welcome}>
+            <h1>Chez Binou</h1>
+            </div>
+        </div>
     )
 }
